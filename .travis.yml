@@ -11,4 +11,8 @@ addons:
 script:
   - bash build_all.sh
   - mv bin bin_linux
+  - ./bin/focus
+  - ./bin/sginfo
+  - ./bin/bin/dls76.x
+  - ./bin/bin/kriber.x
   - python setup.py install
