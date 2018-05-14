@@ -18,3 +18,8 @@ script:
   - ./bin/bin/dls76.x
   - ./bin/bin/kriber.x
   - python setup.py install
+
+notifications:
+    slack:
+      on_success: change
+      on_failure: always
