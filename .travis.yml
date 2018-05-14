@@ -1,27 +1,21 @@
 language: python
-
 python:
-  - 2.7
-  - 3.6
-
+- 2.7
+- 3.6
 addons:
   apt:
     packages:
     - gfortran
-
 script:
-  - bash build_all.sh
-  - mv bin bin_linux
-  - chmod 700 ./bin/focus
-  - ./bin/focus
-  - ./bin/sginfo
-  - ./bin/bin/dls76.x
-  - ./bin/bin/kriber.x
-  - python setup.py install
-
+- bash build_all.sh
+- mv bin bin_linux
+- chmod 700 ./bin/focus
+- "./bin/focus"
+- "./bin/sginfo"
+- "./bin/bin/dls76.x"
+- "./bin/bin/kriber.x"
+- python setup.py install
 notifications:
-    email: false
-    slack:
-      on_success: change
-      on_failure: always
-      secure: "l/li353JrNu3fdiF4QG45c5wZy6c0yikE/f2WPyKuHNEcFEIHw6VGxYVvWvepSm9U2JyRUlicZB92VXzUXpkFKfzFnedcWNU3jWDBl4nH4fEd3vj5T/Uvith+h//mj2Fw6eg7y0DB+OaNkFAAsMwSvLUBrotNaHe/9cX3WqanMxYwp0nYwaOCsB6zXxgUTySt5rWYy/jUZTHii66U9TQe7pHtUlKI4ydDK4WMkuWlTqHhoAWx6DdevuqHiJ6a+/j+EFacsrdlpQc28WXigenI0s6WxOy/J771OX8O5ZWI2ZcCkfXMd1FIeAPrkf7nRCdlkyXcfTzNeRuRO5+Zu2A1Y9EzQs0IlaDFx5mpoQJAD5qstbDA8LBt5Elo3smAgbsH8E/K4OauNgYBR5ozPj5/HneWkkDrCEpKHWF94JFLZ0vvxb2cKGPvDIt7djRRuVZaMvPaUG8katNM/JCh+1lfCd5cDGr4pjo+Au0ip6j0BqjEDlC4aTA2OxrYgcwp26mfI6bATtSKAAFD0AXk1UZShvg6BzCfR6HLeks30mnzwz8m0cMJF22yVHQB3jUWHN1qGCk63ukpNzOMqce2rVZ3vWpZcHz9EWhvbC/ELj2hD/VQoAGJYJ826QIMyynmGTOUJevCc5toJ9BrOVJ8uuVs1eVmgodC1RLPYpF7xnUJF8="
+  email: false
+  slack:
+    secure: lfWN+JaZrpyd1anxVCufjZIP3c8IMHYoSIeI8duymT4nXrvQF7mN3Qi8EKScXDzuhWYnfMZHq0nxvt7AWeJCB7FAymdkkNOMOQ/Cpk+gVWJsx7dR0RrS9rbHanb6s9rcibwIGtAPGGb8VRb4FKau55TYf0dgCGW0W/6sDQpYblkzitt3QSWnspC5Mx/Vc+fntGtDgPvL7Vs2AUoa0eIWhuCDc27rFGf/YbtRlHsQZq8e+BwAVe8iP/PYzYHPxdsLThBU2oz03GUFkTS7QmHZTer4CbOpOHvY//piLZP2N2oc92JXjEj9mOBMAUXlN0wtvx8fmgSi9a4tm7KjgZczBo7TOwtiioUz95Mt1gQHudz0Li1jJ0G65KSvyjbxm5HP+WBa4IrH17W/XBCpaYelH5Q5nQ02VVwFrKPvKvPfsR+eEZg6pMH8BrWvpD/c/oXE79QOm5R9YGT84Ps+jV84oy8AWw6wXztZelCliCp2CVVuC2X7zHtqDwKff/knaj7/t1MSPUNUFd83ojcBmCoopesdd7bwQYvibavuYQhjNSZm+XDyWQ+MtuAilBoyNYpjSLMo93OfB2LcnJfDy9Gx0UwFRlulqzW8jrLDioIHGdviWzmkFzQeMc74NEvgecClCHvzm4bg3vkDa74mGU9ZCAX769PNxJ5NK9Qpp71ZAE8=
