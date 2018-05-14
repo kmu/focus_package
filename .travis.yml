@@ -6,6 +6,8 @@ addons:
   apt:
     packages:
     - gfortran
+    - subversion
+
 script:
 - bash build_all.sh
 - mv bin bin_linux
