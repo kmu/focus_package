@@ -12,6 +12,7 @@ addons:
 script:
   - bash build_all.sh
   - mv bin bin_linux
+  - chmod 700 ./bin/focus
   - ./bin/focus
   - ./bin/sginfo
   - ./bin/bin/dls76.x
