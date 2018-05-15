@@ -6,6 +6,9 @@ addons:
   apt:
     packages:
     - gfortran
+before_install:
+- pwd
+- ls -la
 script:
 - bash build_all.sh
 - mv bin bin_linux
