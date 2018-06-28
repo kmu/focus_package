@@ -21,7 +21,7 @@ script:
   # - "./bin/bin/dls76.x"
   # - "./bin/bin/kriber.x"
 - python setup.py install
-- cd focus_package/focus/src/sayperm;make
+- bash build_sayperm.sh
 
 notifications:
   email: false
