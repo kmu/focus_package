@@ -14,6 +14,7 @@ before_install:
 
 script:
 - bash build_all.sh
+- cp -r bin bin_linux
 - python setup.py install
 - bash build_sayperm.sh
 
