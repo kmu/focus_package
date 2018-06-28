@@ -6,10 +6,10 @@ CCFLAGS = -O2
 HOMELIB = -L../../libtbx
 objects =  sayperm.o golay.o sayre.o subrout.o atomfac.o
 sayperm:$(objects)
-	$(CC) $(CCFLAGS) -o sayperm $(objects) $(HOMELIB) -lsginfo -lm 
+	$(CC) $(CCFLAGS) -o sayperm $(objects) $(HOMELIB) -lsginfo -lm -L../../build/lib
 .c.o:
 	$(CC) $(CCFLAGS) -c $*.c
 golay:
-	$(CC) $(CCFLAGS) golay.c -o golay 
+	$(CC) $(CCFLAGS) golay.c -o golay
 clean:
 	rm -f $(objects) sayperm.o sayperm golay
